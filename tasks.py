@@ -1,9 +1,11 @@
-import numpy
+import numpy as np
 
 # Follow the tasks below to practice basic Python concepts.
 # Write your code in between the dashed lines.
 # Don't import additional packages. Numpy suffices.
-#Hello world
+
+
+
 # Task 1: 
 # Instructions:
 #Write a function that takes one numeric argument as input. 
@@ -13,7 +15,11 @@ import numpy
 # Your code here:
 # -----------------------------------------------
 
-def step
+def step (x):
+    if x > 0:
+        return 1
+    else:
+        return -1
 
 
 # -----------------------------------------------
@@ -28,7 +34,9 @@ def step
 
 # Your code here:
 # -----------------------------------------------
-def ReLu
+def ReLu (array, cutoff = 0):
+    return np.where(array < cutoff, cutoff, array)
+
 
 
 # -----------------------------------------------
@@ -44,7 +52,12 @@ def ReLu
 # Your code here:
 # -----------------------------------------------
 
-def neural_net_layer
+def neural_net_layer(x,y, cutoff=0):
+    matrix_multiplication = np.dot(x, y)
+    result = ReLu(matrix_multiplication, cutoff)
+    return result
+
+
 
 
 # ------------------------------------------
