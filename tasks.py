@@ -3,7 +3,7 @@ import numpy
 # Follow the tasks below to practice basic Python concepts.
 # Write your code in between the dashed lines.
 # Don't import additional packages. Numpy suffices.
-
+#Hello world
 # Task 1: 
 # Instructions:
 #Write a function that takes one numeric argument as input. 
